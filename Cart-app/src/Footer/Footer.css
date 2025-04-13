@@ -1,0 +1,19 @@
+footer{
+    display: flex;
+    margin : 20px;
+    justify-content: end;
+}
+
+.checkout{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #282c34;
+    color: white;
+    width: 150px;
+}
+
+.checkout:hover{
+    background-color: #ffffff;
+    color: #282c34;
+    cursor: pointer;
+}

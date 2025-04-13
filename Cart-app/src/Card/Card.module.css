@@ -3,7 +3,7 @@
 }
 
 .card{
-    position: relative; /* Ensure the remove button is positioned relative to the card */
+    position: relative;
     display: flex;
     align-items: center;
     border: 1px solid black;
@@ -24,6 +24,10 @@
     text-align: center;
 }
 
+.cardInput:hover{
+    cursor: default;
+}
+
 .cardPriceInput{
     width : 80px;
     border: none;
@@ -35,7 +39,6 @@
 }
 
 .cardButton:hover{
-    background-color: #ddd;
     cursor: pointer;
 }
 .cardPrice{
@@ -55,15 +58,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .cardRemoveButton::before {
-    content: "\1F5D1"; /* Trash can icon */
+    content: "\1F5D1";
     font-family: "Segoe UI Symbol";
 }
 
 .cardRemoveButton:hover {
-    background-color: red;
-    color: white;
+    color: red;
 }

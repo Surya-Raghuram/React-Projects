@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Card from "./Card/Card.jsx";
 import Header from "./Header/Header.jsx";
+import Footer from "./Footer/Footer.jsx";
 
 function App() {
     const [cards, setCards] = useState([
@@ -31,7 +32,6 @@ function App() {
             return card;
         });
 
-        // Calculate new totals
         const totalQuantity = updatedCards.reduce((sum, card) => sum + card.quantity, 0);
         const totalPrice = updatedCards.reduce((sum, card) => sum + card.quantity * card.price, 0);
 
@@ -53,6 +53,7 @@ function App() {
                     updateQuantity={(newQuantity) => updateTotals(card.id, newQuantity)}
                 />
             ))}
+            <Footer />
         </>
     );
 }
