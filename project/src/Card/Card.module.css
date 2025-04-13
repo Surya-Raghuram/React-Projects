@@ -1,0 +1,69 @@
+.cardImg{
+    display : inline-block;
+}
+
+.card{
+    position: relative; /* Ensure the remove button is positioned relative to the card */
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding : 20px;
+}
+
+.right{
+    margin-left : 30px;
+    min-width : 20rem;
+}
+
+.cardTitle{
+    margin-top : 0;
+}
+
+.cardInput, .cardButton{
+    width: 30px;
+    text-align: center;
+}
+
+.cardPriceInput{
+    width : 80px;
+    border: none;
+}
+
+.cardPriceLabel{
+    display: inline-block;
+    width: 80px;
+}
+
+.cardButton:hover{
+    background-color: #ddd;
+    cursor: pointer;
+}
+.cardPrice{
+    width : 200px;
+}
+.cardRemoveButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cardRemoveButton::before {
+    content: "\1F5D1"; /* Trash can icon */
+    font-family: "Segoe UI Symbol";
+}
+
+.cardRemoveButton:hover {
+    background-color: red;
+    color: white;
+}

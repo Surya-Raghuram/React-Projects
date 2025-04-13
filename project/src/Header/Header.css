@@ -1,0 +1,28 @@
+.title {
+    background-color: #282c34; 
+    padding: 3px;
+    text-align: center; 
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+.cart{
+    text-align: left;
+}
+
+.tagline {
+    display: flex;
+    justify-content:space-between;
+}
+
+.prices {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.pricesinput {
+    border :none;
+    width:80px;
+}
